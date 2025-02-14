@@ -27,16 +27,19 @@
 
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import download from "../../img/download.jpeg"
-import alarm from "../../img/alarm.jpg";
+import bg from "../../img/bg.jpeg"
 import currency from "../../img/currency.jpg";
-import whatss from "../../img/whatss.jpeg";
-import insta from "../../img/insta.jpeg";
-import you from "../../img/you.png"
+import whatsapp from "../../img/Whatsapp.png";
+import instagram from "../../img/Instagram.jpg"
+import youtube from "../../img/Youtube.png";
+import Password from "../../img/Password.png";
 
 const Projects = () => {
   return (
-    <div id="Projects" className="p-6 md:p-20 text-white w-full max-w-[1200px] mx-auto">
+    <div
+      id="Projects"
+      className="p-6 md:p-20 text-white w-full max-w-[1200px] mx-auto"
+    >
       {/* Title Section */}
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 tracking-tight">
         My Projects 🚀
@@ -52,35 +55,37 @@ const Projects = () => {
           demoUrl={"https://currency-converter-jbqh.onrender.com"}
         />
         <ProjectCard
-          title="Alarm Clock"
-          image={alarm}
-          main="An alarm clock project using HTML, CSS, and JavaScript allows users to set alarms, display the current time, and trigger alerts or sounds at scheduled times and managed time."
-          codeUrl={"https://github.com/Sudhanshudholya/Alarm-Clock"}
+          title="Password generator"
+          image={Password}
+          main="A password generator creates strong, random passwords using a mix of letters, numbers, and symbols, enhancing security and preventing unauthorized access to accounts and systems."
+          codeUrl={"https://github.com/Sudhanshudholya/Password-generator"}
+          demoUrl={"https://password-generator-0ryv.onrender.com/"}
         />
         <ProjectCard
-          title="Quotes app"
-          image={download}
-          main="A Quote App using HTML, CSS, and JavaScript displays random or categorized quotes, allowing users to generate, share, and save their favorite inspirational quotes dynamically."
-          codeUrl={"https://github.com/Sudhanshudholya/Quote-App"}
-          demoUrl={"https://quote-app-0ug7.onrender.com/"}
+          title="Background changer"
+          image={bg}
+          main="A background changer allows users to dynamically switch backgrounds on a webpage or app, enhancing visual appeal and customization. It can use solid colors, gradients, or images for a personalized user experience."
+          codeUrl={"https://github.com/Sudhanshudholya/Background-changer"}
+          demoUrl={"https://background-changer-xql0.onrender.com"}
         />
+
         <ProjectCard
           title="Whatsapp"
-          image={whatss}
+          image={whatsapp}
           main="A WhatsApp clone using HTML, CSS, and JavaScript replicates the chat interface, allowing real-time messaging, notifications, and user interactions for an engaging communication experience."
           codeUrl={"https://github.com/Sudhanshudholya/Whatsapp"}
           demoUrl={"https://clone-whats.netlify.app/"}
         />
         <ProjectCard
           title="Instagram"
-          image={insta}
-          main="An Instagram clone using HTML, CSS, and JavaScript replicates the feed, profile, and post interactions, enabling users to upload images, like posts, and experience a social media interface."
+          image={instagram}
+          main="Instagram is a social media platform for sharing photos, videos, and stories. Users can follow others, like, comment, and explore content while engaging through reels, IGTV, and direct messaging."
           codeUrl={"https://github.com/Sudhanshudholya/Instagram"}
           demoUrl={"https://cls-insta.netlify.app/"}
         />
         <ProjectCard
           title="Youtube"
-          image={you}
+          image={youtube}
           main="A YouTube clone using HTML, CSS, and JavaScript replicates video streaming, featuring a homepage, video player, search functionality, and interactive UI for an engaging user experience."
           codeUrl={"https://github.com/Sudhanshudholya/Youtube"}
           demoUrl={"https://youtube-cls.netlify.app/"}
@@ -89,6 +94,5 @@ const Projects = () => {
     </div>
   );
 };
-
 
 export default Projects;
