@@ -61,12 +61,10 @@
 // import React, { useState } from "react";
 // import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
 
-
 // const Navbar = () => {
 //   const [menuOpen, setMenuOpen] = useState(false);
 
 //   console.log("Menu State:", menuOpen);  // Debugging menu state
-  
 
 //   return (
 //     <nav className="flex items-center justify-between px-10 py-6 md:px-20 text-white bg-cyan-800 bg-opacity-30 shadow-md fixed w-full z-50">
@@ -136,7 +134,6 @@
 
 // export default Navbar;
 
-
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
 
@@ -146,7 +143,12 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-10 py-6 md:px-20 text-white bg-cyan-800 bg-opacity-30 shadow-md fixed w-full z-50">
       {/* Logo */}
-      <span className="text-xl font-bold tracking-wide">Portfolio</span>
+      <span
+        className="text-xl font-bold tracking-wide cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        Portfolio
+      </span>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 font-semibold">
@@ -200,4 +202,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
