@@ -36,14 +36,14 @@ import you from "../../img/you.png"
 
 const Projects = () => {
   return (
-    <div id="Projects" className="p-10 md:p-24 text-white">
+    <div id="Projects" className="p-6 md:p-20 text-white w-full max-w-[1200px] mx-auto">
       {/* Title Section */}
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 tracking-tight">
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 tracking-tight">
         My Projects 🚀
       </h1>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 px-4 md:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 px-2 sm:px-6 md:px-12">
         <ProjectCard
           title="Currency Coverter"
           image={currency}
@@ -71,7 +71,6 @@ const Projects = () => {
           codeUrl={"https://github.com/Sudhanshudholya/Whatsapp"}
           demoUrl={"https://clone-whats.netlify.app/"}
         />
-
         <ProjectCard
           title="Instagram"
           image={insta}
@@ -79,7 +78,6 @@ const Projects = () => {
           codeUrl={"https://github.com/Sudhanshudholya/Instagram"}
           demoUrl={"https://cls-insta.netlify.app/"}
         />
-
         <ProjectCard
           title="Youtube"
           image={you}
@@ -91,5 +89,6 @@ const Projects = () => {
     </div>
   );
 };
+
 
 export default Projects;
